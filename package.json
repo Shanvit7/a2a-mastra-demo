@@ -1,0 +1,51 @@
+{
+  "name": "travel-receptionist-agents",
+  "version": "1.0.0",
+  "description": "Travel Receptionist Agents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "mastra start",
+    "etl:excel": "tsx --tsconfig tsconfig.json scripts/etl-excel.ts --truncate",
+    "etl:excel:append": "tsx --tsconfig tsconfig.json scripts/etl-excel.ts --append",
+    "prettier:fix": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "db:init": "tsx --tsconfig tsconfig.json scripts/init-db.ts",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Shanvit Shetty",
+    "github": "shanvit7",
+    "url": "https://github.com/shanvit7"
+  },
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.80",
+    "@mastra/core": "^0.24.0",
+    "@mastra/loggers": "^0.10.19",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.8",
+    "@types/node": "^24.10.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "mastra": "^0.18.0",
+    "prettier": "^3.7.4",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,md}": [
+      "prettier --write"
+    ]
+  }
+}

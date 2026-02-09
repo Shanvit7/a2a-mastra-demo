@@ -1,0 +1,12 @@
+output.txt
+node_modules
+dist
+.mastra
+.env.development
+.env
+.env.*
+*.db
+*.db-*
+
+/generated/prisma
+temp_video
