@@ -8,11 +8,8 @@
     "dev": "mastra dev",
     "build": "mastra build",
     "start": "mastra start",
-    "etl:excel": "tsx --tsconfig tsconfig.json scripts/etl-excel.ts --truncate",
-    "etl:excel:append": "tsx --tsconfig tsconfig.json scripts/etl-excel.ts --append",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "db:init": "tsx --tsconfig tsconfig.json scripts/init-db.ts",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -27,10 +24,11 @@
     "node": ">=20.9.0"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^2.0.80",
+    "@mastra/client-js": "^1.2.0",
     "@mastra/core": "^0.24.0",
     "@mastra/loggers": "^0.10.19",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/mssql": "^9.1.8",
