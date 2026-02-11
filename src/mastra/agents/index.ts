@@ -25,7 +25,10 @@ For flight-booking-agent: include origin and destination in the payload.
 Always be helpful, professional, and ensure you provide clear updates to users about the status of their requests.`,
   description:
     "AI agent that helps users with their travel plans using A2A communication.",
-  model: "google/gemini-2.5-flash",
+  model: {
+    id: "ollama/qwen3-coder:30b",
+    url: "http://devserver.zosma.ai:11434/v1",
+  },
   tools: a2aTools,
 });
 
