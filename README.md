@@ -104,7 +104,7 @@ src/
 This demo showcases Agent-to-Agent (A2A) communication between:
 
 1. **Receptionist Agent**: The main agent that handles customer interactions and inquiries
-2. **Agno Agent**: Specialized booking agent for hotel and flight reservations
+2. **Agno Agent**: Specialized booking agent for hotel and flight reservations ([a2a-agno-demo](https://github.com/Shanvit7/a2a-agno-demo))
 
 The receptionist agent communicates with the agno agent using A2A protocol to:
 
@@ -145,3 +145,4 @@ This project is licensed under the ISC License.
 
 - [Mastra Documentation](https://mastra.ai/)
 - [A2A Protocol Documentation](https://mastra.ai/docs) (check Mastra docs for A2A details)
+- [Agno Agents (A2A)](https://github.com/Shanvit7/a2a-agno-demo) - Hotel and flight booking agents called via A2A protocol
